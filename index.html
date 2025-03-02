@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        .body{
+            margin:0;
+            padding: 0;
+            
+        }
+        .conatiner{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin: 20px 30px;
+            padding: 15px;
+
+            
+
+        }
+
+        .product-card{
+           width: 320px; 
+           height: 430px ;
+           border: 2px solid rgb(222, 163, 54);
+           box-shadow: 0 0 5px rgb(25, 24, 24);
+           border-radius: 15px;
+           padding-bottom: 20px;
+           margin: 30px 28px;
+           justify-content: space-around;
+           
+        }
+        .royal-caninn-img{
+            width:100%;
+            display: flex;
+            margin: 0px auto;
+            border-radius: 10px 10px 0 0 ;
+            height: 150px;
+            object-fit: cover;
+        }
+           
+        
+    
+         .product-title{
+            text-align: center;
+            padding: 10px;
+
+        
+        }
+        .product-discription{
+            text-align: justify ;
+            padding: 0px 5px ;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .product-btn{
+          display: block;
+          justify-content: center;
+          margin: 5px  auto;
+          font-size: 15px;
+          padding: 5px 15px;
+          border-radius:50px ;
+          background-color: rgb(234, 182, 86);
+          border:1px solid rgb(222, 163, 54);
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        /* Mobile */
+       @media(max-width: 600px){
+        .product-title {
+            text-align: left;
+            padding-left: 20px;
+            font-size: 22px;
+            margin: 5px 0;
+        }
+        .product-card{
+            width: 400px;
+            height: 400px;
+        }
+        .product-btn{
+            font-size: 20px;
+            padding: 5px 30px;
+        }
+        .product-discription{
+            padding: 0 20px;
+            font-size: 15px;
+        }
+        .search-paws{
+            display: none;
+        }
+        .menu{
+            display: none;
+        }
+        .interface-icon{
+            display: block;
+            margin-left: auto;
+
+        }
+       }
+        .interface-icon{
+            height: 30px;
+            margin-left: 280px;
+            padding: 1px auto;
+            
+            
+
+        }
+    
+        .navbar{
+            background-color: rgb(25, 8, 8);
+            color: aliceblue;
+            padding: 10px;
+           border-radius: 5px 5px 5px;
+            width:100% ;
+            position: sticky;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+        }
+        
+        .brand-logo{
+            height: 40px;
+            width: 40px;
+            background-color: rgb(76, 75, 75);
+            padding: 3px 3px 2px 2px;
+            border: 1px solid rgb(109, 108, 107);
+            border-radius: 50px;
+            box-shadow: 0 0 5px rgb(130, 101, 101);
+            cursor: pointer;
+            
+        }
+        .brand{
+            display: flex;
+            align-items: center;
+        }
+        .pawss{
+            color:bisque ;
+            font-family:cursive;
+           
+        }
+        .menu{
+            text-align: center;
+            margin-left: 800px;
+
+        }
+        .menu-item{
+            color: antiquewhite;
+            text-decoration: none;
+            font-size: 20px;
+            margin: 22px;
+        } 
+        .menu-item:hover{
+            text-decoration: underline;
+
+        }  
+        .search-paws{
+            height: 15px;
+            width: 60px;
+
+
+        }
+        .search-paws{
+            border-radius: 50px;
+            box-shadow: 1px solid gold;
+            cursor: pointer;
+        
+    }
+        
+
+        
+
+     
+          
+
+       
+    </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="brand">
+                <img src="pawprint.png" class="brand-logo" alt="brand-L"/>
+                &nbsp;
+                <h2 class="pawss">Paws🐾</h2>
+                <div  class=" menu">
+                   <a href="#" class="menu-item">  • Home</a>
+                    <a href="#"  class="menu-item">• Menu</a>
+                    <a href="#"  class="menu-item">• About</a>
+                    <a href="#"  class="menu-item">• Services</a>
+                </div>
+                <div>
+                    <input type="text" placeholder="🔍search" class="search-paws"/>
+                </div>
+                <img src="menu (1).png" class="interface-icon"/>
+                
+            </div>
+        </div>
+       <div><h1>
+            Smile with Paws🐾
+        </h1>
+    </div> 
+
+<div class="conatiner">
+
+    <div class="product-card">
+
+        <img src="gold-ret-jpg.jpeg" class="royal-caninn-img" alt="rc">
+
+        <h3 class="product-title"> Breed :
+            Golden Retriver</h3>
+
+        <p class="product-discription">
+            The Golden Retriever is a Scottish breed of retriever dog of medium size. It is characterised by a gentle and affectionate nature and 
+            a striking golden coat. It is a working dog, and registration is subject to successful completion of a working trial.It is commonly 
+            kept as a pet and is among the most frequently Western countries. Golden Retriver are friendly Dog
+             
+
+        </p>
+
+        <button class="product-btn">Know More</button>
+    </div>
+    <br/>
+
+    <div class="product-card">
+
+        <img src="gsd-img-jpg.jpeg" class="royal-caninn-img" alt="rc">
+
+
+        <h3 class="product-title"> Breed :
+            German Shepherd</h3>
+
+        <p class="product-discription">
+            The German Shepherd, also known in Britain as an Alsatian, is a German breed of working dog of medium to large size.
+             The breed was developed by Max von Stephanitz using various traditional German herding dogs from 1899.German Shepherd dog, breed of working dog developed
+              in Germany from traditional herding and farm dogs. Coat 1,2,Long coat.
+
+        </p>
+
+        <button class="product-btn">Know More</button>
+    </div>
+    <br/>
+
+    <div class="product-card">
+
+        <img src="chow-chow-jpg.jpeg" class="royal-caninn-img" alt="rc">
+
+        <h3 class="product-title"> Breed :
+           Chow Chow</h3>
+
+        <p class="product-discription">
+           
+            The Chow Chow is a spitz-type of dog breed originally from Northern China.
+             with a broad skull and small, triangular, erect ears with rounded tips.
+               The fur is particularly thick in the neck area, giving it a 
+              distinctive ruff or mane appearance. The coat may be shaded/self-red, black, blue, cinnamon/fawn, or cream.
+
+        </p>
+
+        <button class="product-btn">Know More</button>
+    </div>
+    <br/>
+
+    <div class="product-card">
+
+        <img src="rowt-jpg.jpeg" class="royal-caninn-img" alt="rc">
+
+        <h3 class="product-title"> Breed :
+           Rot-wieller</h3>
+
+        <p class="product-discription">
+            Rottweiler, breed of working dog that is thought to be descended from drover dogs left by the Roman legions in the vicinity 
+            of what is now Rottweil, Germany,
+            1900 the Rottweiler accompanied local butchers on buying expeditions, carrying money in a neck pouch to market. 
+            It has also served as a guard dog, a draft dog, a rescue dog, and a police dog.
+        </p>
+
+        <button class="product-btn">Know More</button>
+    </div>
+    <br/>
+
+    <div class="product-card">
+
+        <img src="lab-jpg.jpeg" class="royal-caninn-img" alt="rc">
+
+        <h3 class="product-title"> Breed :
+            Labrodor</h3>
+
+        <p class="product-discription">
+            The Labrador Retriever or simply Labrador is a British breed of retriever gun dog. It was developed in the United Kingdom from St. 
+            John's water dogs imported from the colony of Newfoundland and was named after the Labrador region of
+             that colony. It is among the most commonly kept dogs in several countries, particularly in the Western world.
+
+        </p>
+
+        <button class="product-btn">Know More</button>
+    </div>
+    <br/>
+
+    <div class="product-card">
+
+        <img src="husky-jpg.jpeg" class="royal-caninn-img" alt="rc">
+
+        <h3 class="product-title"> Breed :
+            Husky</h3>
+
+        <p class="product-discription">
+            Husky is a general term for a dog used in the polar regions, primarily and specifically for work as sled dogs. 
+            It refers to a traditional northern type, notable for its cold-weather tolerance and overall hardiness.
+             Modern racing huskies that maintain arctic breed traits (also known as Alaskan huskies) represent an ever-changing 
+             crossbreed of the fastest dogs.
+
+        </p>
+
+        <button class="product-btn">Know More</button>
+    </div>
+
+</div>
+</body>
+</html>
